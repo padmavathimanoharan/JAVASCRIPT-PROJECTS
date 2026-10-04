@@ -50,3 +50,14 @@ function random() {
     window.alert(Math.random());
     window.alert(Math.random() * 100);
 }
+
+function my_Dictionary() {
+    var Animal = {
+        Species: "Dog",
+        Color: "Black",
+        Breed: "Labrador",
+        Age: 5,
+        Sound: "Bark!"
+    }
+    document.getElementById("Dictionary").innerHTML = "Species: " + Animal.Species + ", Color: " + Animal.Color + ", Breed: " + Animal.Breed;
+}
