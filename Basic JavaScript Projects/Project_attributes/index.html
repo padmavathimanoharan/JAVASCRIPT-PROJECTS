@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Attributes & Methods</title>
+        <!--script executed in order, only after the entire document has been loaded-->
+        <script src="JS/defer_1.js" defer></script> 
+        <script src="JS/defer_2.js" defer></script>
+    </head>
+    <body onload="pageLoad()">
+        <h1>Async and Defer Assignment</h1>
+        <p id="p1">Display async attributes</p>
+        <p id="p2">Display defer attributes</p>
+        <!--script executed asynchronously, without blocking the page-->      
+        <script src="JS/async.js" async></script>
+        
+        <h2>how to debug on dev tools</h2>
+        <button onclick="clickCount()">Counter</button>
+        <button onclick="resetCount()">Reset Counter</button>
+        <p id="counter"></p>
+        <script>
+        function pageLoad() {
+            var greeting = "Welcome to ";
+            greeting += "learning how to debug a code ";
+            greeting += "using the console with dev tools!";
+            window.alert(greeting);
+        }
+
+        //sets default count to 0 
+        var count = 0;
+        // counts the number of clicks
+        function clickCount() {
+            count++;
+            document.getElementById("counter").innerHTML = count;
+        }
+        //Resets number of clicks
+        function resetCount() {
+            var count = "";
+            document.getElementById("counter").innerHTML = count;
+        }
+        </script>
+    </body>
+</html>
