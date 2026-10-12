@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrow Function Challenge</title>
+    <meta charset="UTF-8">   
+</head>
+
+<body>
+    <h1>Javascript Arrow Function Challenge</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="displayCar" onclick="car()"></p>
+    <button onclick="myFunction()">Check Ages</button>
+    <p id="displayAge"></p>
+    <h2>The querySelector() Method</h2>
+    <p>Method returns the first element within a file that matches the selector specified, If there are no matches found, null is returned.</p>
+    <p class="example">I am a paragraph.</p>
+    <p class="example">I am a paragraph.</p> 
+    <h2>JavaScript Global Methods</h2>
+    <h3>The parseFloat() Method</h3>
+    <p>parseFloat() parses a string and returns the first number:</p>
+    <p id="demo"></p>
+    <h2>JavaScript Comparison</h2>
+    <h3>The != (not equal) Operator</h3>
+    <p>Assign 5 to x, and display the value of the comparison (x != 8).</p>
+    <p id="note"></p>
+    <script>
+        func = function() {
+            return "This is my regular function";
+        }
+
+        document.getElementById("p1").innerHTML = func();
+        // arrow function
+        func1 = () => "This is my arrow function";
+        var car;
+
+        document.getElementById("p2").innerHTML = func1();
+        // arrow function
+        car = (val) => "These are my favorite car brands: " + val;
+        document.getElementById("displayCar").innerHTML = car("Honda, Ford, Nissan");
+        // Array .some() Method
+        var ages = [2, 10, 18, 20, 13, 15, 30];
+        // Using the arrow function to pass in a parameter of age
+        checkAge = (age) => age >= 18;
+        function myFunction() {
+            // Use the .some() to iterate through the array of ages and display the result.
+            document.getElementById("displayAge").innerHTML = ages.some(checkAge);
+        }
+        document.querySelector(".example").style.backgroundColor = "red";
+        document.getElementById("demo").innerHTML =
+        parseFloat(10) + "<br>" +
+        parseFloat("10") + "<br>" +
+        parseFloat("10.33") + "<br>" +
+        parseFloat("34 45 66") + "<br>" +
+        parseFloat("He was 40");
+        let x = 5;
+        document.getElementById("note").innerHTML = (x != 8);
+    </script>
+</body>
+
+</html>
