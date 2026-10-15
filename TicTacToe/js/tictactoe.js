@@ -1,6 +1,6 @@
 //This variable keeps track of whose turn it is.
 let activePlayer = 'X';
-//This array stores an array of moves We use this to determine win conditions.
+//This array stores an array of moves. We use this to determine win conditions.
 let selectedSquares = [];
 
 //This function is for placing an x or o in a square.
@@ -151,11 +151,11 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     const c = canvas.getContext('2d');
     //This line indicates where the start of a lines x axis is.
     let x1 = coordX1,
-        //This line indicates where the start of a line's y axis is.
+        //This line indicates where the start of a lines y axis is.
         y1 = coordY1,
-        //This line indicates where the end of a line's x axis is.
+        //This line indicates where the end of a lines x axis is.
         x2 = coordX2,
-        //This line indicates where the end of a line's y axis is.
+        //This line indicates where the end of a lines y axis is.
         y2 = coordY2,
         //This variable stores temporary x axis data we update in our animation loop.
         x = x1,
