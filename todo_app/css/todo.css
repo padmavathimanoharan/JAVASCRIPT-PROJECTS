@@ -1,0 +1,104 @@
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 80dvh;
+    padding: 20px;
+    padding-bottom: 80px;
+    background-color: #f4f6f8;
+}
+
+h1 {
+    color: #1f3c5f;
+}
+
+input {
+    width: 70%;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 2px solid #1f3c5f;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2f80ed;
+}
+
+/* Add Item button */
+#add {
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #2f80ed;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: #1f3c5f;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Task list */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-left: 5px solid #2f80ed;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+/* Remove button */
+.remove {
+    width: 35px;
+    height: 35px;
+    color: white;
+    background-color: #d64545;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: #b83232;
+}
+
+/* Footer always at the bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: burlywood;
+    border-top: 5px solid rgb(97, 58, 0);
+}
