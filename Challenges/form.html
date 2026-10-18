@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form Challenge</title>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Contact Form with Validation</h1>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
